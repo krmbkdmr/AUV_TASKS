@@ -13,13 +13,9 @@ def filter_angles(angle_groups):
 
 	for grup in angle_groups:
 		medyan = np.median(grup)
+		ortalamalar.append(medyan)
 
-		temizlenmisacilar = []
 
-		for aci in grup:
-			if abs(aci - medyan) <= 20:
-				temizlenmisacilar.append(aci)
-		ortalamalar.append(float(np.mean(temizlenmisacilar)))
 	return ortalamalar
 
 # Hazır yardımcı fonksiyon: değiştirmeniz gerekmiyor.
