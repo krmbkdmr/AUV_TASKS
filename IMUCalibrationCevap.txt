@@ -3,8 +3,8 @@ SORULAR
 	Hayır olmak zorunda değil. Çünkü bias değerlerini test değerlerinden çıkardığımızda sadece sensörün sabit ölçüm hatasını gidermiş oluruz ve gerçek açısal hızını ortadan kaldıramayız. Örneğin ikinci test ölçümünden bias çıkarıldığında 
 	[0.0, 0.09999999999999999, 0.0] şeklinde bir çıktı alırız. Bu çıktı aracın y ekseninde 0.1 rad/sn ile gerçek dönme hareketini gösterir.
 
-
 2. Kalibrasyon sırasında araç dönseydi sonuç nasıl etkilenirdi?
+	Kalibrasyon sırasında eğer araç dönseydi farklı zamanlarda alınan verilerde manipülasyona gidilmiş olurdu ve verilerin çarpıtılmasına yol açardı, olmayan sabit ölçüm hataları(bias) gözükürdü. Bias olması gereken bir değer değil de çok alakasız bir değer olurdu. Bu da test aşamasında gerçek dönme hareketinin olması gerekenden çok daha az veya çok daha fazla görünmesine sebep olurdu.
 
 
 3. Fonksiyonunuzu denemek için test_data listesine iki yeni ham ölçüm ekleyiniz: biri sensör hareketsizken, diğeri yalnızca z ekseni
