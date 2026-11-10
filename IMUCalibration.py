@@ -35,4 +35,6 @@ if __name__ == "__main__":
 	bias = calculate_bias(calibration_data)
 	corrected_measurements = correct_measurements(test_data, bias)
 	print("Bias (rad/s):", bias)
-	print("Düzeltilmiş ölçümler (rad/s):", corrected_measurements)
+	print("Düzeltilmiş ölçümler (rad/s):")
+	for olcumler in corrected_measurements:
+		print(olcumler)
