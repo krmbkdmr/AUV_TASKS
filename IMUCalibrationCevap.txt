@@ -1,5 +1,7 @@
 SORULAR
 1. Test verilerinin hepsi düzeltildikten sonra sıfır olmak zorunda mıdır? Verilen ölçümlerden birini örnek göstererek açıklayınız.
+	Hayır olmak zorunda değil. Çünkü bias değerlerini test değerlerinden çıkardığımızda sadece sensörün sabit ölçüm hatasını gidermiş oluruz ve gerçek açısal hızını ortadan kaldıramayız. Örneğin ikinci test ölçümünden bias çıkarıldığında 
+	[0.0, 0.09999999999999999, 0.0] şeklinde bir çıktı alırız. Bu çıktı aracın y ekseninde 0.1 rad/sn ile gerçek dönme hareketini gösterir.
 
 
 2. Kalibrasyon sırasında araç dönseydi sonuç nasıl etkilenirdi?
