@@ -12,8 +12,8 @@ def filter_angles(angle_groups):
 	ortalamalar = []
 
 	for grup in angle_groups:
-		medyan = np.median(grup)
-		ortalamalar.append(float(medyan))
+		ortalama = np.mean(grup)
+		ortalamalar.append(float(ortalama))
 
 
 	return ortalamalar
