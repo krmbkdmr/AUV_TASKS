@@ -22,8 +22,14 @@ def calculate_bias(samples):
 	return[bx,by,bz]
 
 def correct_measurements(samples, bias):
-	# TODO: Her satırdan bias çıkarın; yeni bir liste döndürün.
-	raise NotImplementedError("correct_measurements tamamlanmalı")
+	dogrulanan = []
+	for sample in samples:
+		dx= sample[0] - bias[0]
+		dy= sample[1] - bias[1]
+		dz= sample[2] - bias[2]
+
+		dogrulanan.append([dx,dy,dz])
+	return dogrulanan
 
 if __name__ == "__main__":
 	bias = calculate_bias(calibration_data)
