@@ -1,6 +1,4 @@
 import numpy as np
-
-import numpy as np
 # Her açı grubu aynı sıradaki robot konumuna ait.
 positions = [[0, 0], [12, 0], [12, 10], [0, 10]]
 angle_samples = [
@@ -21,9 +19,8 @@ def filter_angles(angle_groups):
 		for aci in grup:
 			if abs(aci - medyan) <= 20:
 				temizlenmisacilar.append(aci)
-		ortalamalar.append(np.mean(temizlenmisacilar))
+		ortalamalar.append(float(np.mean(temizlenmisacilar)))
 	return ortalamalar
-	raise NotImplementedError("filter_angles tamamlanmalı")
 
 # Hazır yardımcı fonksiyon: değiştirmeniz gerekmiyor.
 def estimate_position(positions, angles):
