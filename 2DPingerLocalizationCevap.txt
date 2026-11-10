@@ -1,0 +1,3 @@
+Sorular: 
+1. Tek konumdan alınan açı neden pinger'ın konumunu bulmaya yetmez?
+2. Uç değerleri elemeden ortalama alıp konumu tekrar hesaplayın. Sonuç nasıl değişti?
