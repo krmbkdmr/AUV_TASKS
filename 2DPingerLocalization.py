@@ -10,9 +10,21 @@ angle_samples = [
 [-41, -39, -37, -35, -33, 70, -150],
 ]
 def filter_angles(angle_groups):
-# TODO: Her grubun uç değerlerini eleyip ortalamasını bulun.
-# TODO: Dört ortalama açıyı liste olarak döndürün.
-raise NotImplementedError("filter_angles tamamlanmalı")
+
+	ortalamalar = []
+
+	for grup in angle_groups:
+		medyan = np.median(grup)
+
+		temizlenmisacilar = []
+
+		for aci in grup:
+			if abs(aci - medyan) <= 20:
+				temizlenmisacilar.append(aci)
+		ortalamalar.append(np.mean(temizlenmisacilar))
+	return ortalamalar
+	raise NotImplementedError("filter_angles tamamlanmalı")
+
 # Hazır yardımcı fonksiyon: değiştirmeniz gerekmiyor.
 def estimate_position(positions, angles):
 	A, b = [], [] # Her konum ve açıdan bir doğru denklemi kuracağız.
