@@ -1,0 +1,11 @@
+SORULAR
+1. Test verilerinin hepsi düzeltildikten sonra sıfır olmak zorunda mıdır? Verilen ölçümlerden birini örnek göstererek açıklayınız.
+
+
+2. Kalibrasyon sırasında araç dönseydi sonuç nasıl etkilenirdi?
+
+
+3. Fonksiyonunuzu denemek için test_data listesine iki yeni ham ölçüm ekleyiniz: biri sensör hareketsizken, diğeri yalnızca z ekseni
+etrafında sizin seçeceğiniz bir açısal hızla dönerken okunacak değerleri temsil etsin. Her ölçümde, gerçek açısal hıza hesapladığınız
+bias değerlerini ekleyiniz; rastgele gürültü olmadığını varsayınız. Önce bu iki ölçümün düzeltildikten sonra ne olmasını beklediğinizi
+yazınız. Ardından kodu çalıştırıp sonuçları tahmininizle karşılaştırınız.
