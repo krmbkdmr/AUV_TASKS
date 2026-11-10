@@ -1,4 +1,6 @@
 Sorular: 
 1. Tek konumdan alınan açı neden pinger'ın konumunu bulmaya yetmez?
 	Tek konumdan alınan açı değeri pinger'in yalnızca yönünü belirlemektedir, uzaklıkla veya konumla ilgili yeterli bilgi vermemektedir.Bu doğru üzerinde sonsuz sayıda noktada olma olasılığı vardır. Bu belirsizliği gidermek için birden fazla robottan alınan veri ile doğrulama gerekir.
+
 2. Uç değerleri elemeden ortalama alıp konumu tekrar hesaplayın. Sonuç nasıl değişti?
+	Uç değerleri elemeden ortalama aldığımda pinger'ın tahmini konumu yaklaşık [10.33, 5.37] metre olarak hesaplandı. Uç değerler ortalamayı değiştirdiği için pinger'ın tahmini konumu filtreleme yapılan sonuca göre farklılaştı. Bu durum, gürültülü ölçümlerin lokalizasyon doğruluğunu olumsuz etkilediğini göstermektedir.
