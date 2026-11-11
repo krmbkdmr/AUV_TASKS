@@ -5,3 +5,5 @@
 2. Bounding box ile nesnenin gerçek genişlik ve yüksekliğinden konum tahmini yaptığımızı düşünün. Mercek bozulmasını gidermek ve
 rotasyonu düzeltmek bu tahmine nasıl katkı sağlar? İkisinin kutunun merkezi, genişliği ve yüksekliği üzerindeki etkisini ayrı ayrı
 açıklayın.
+
+	Hiçbir düzenleme yapmadığımız durumda cismin konumundan dolayı mercek etkisiyle olması gerekenden daha geniş veya daha dar, olması gerekenden daha uzun veya daha kısa görünmesine sebep olabilir. Ek olarak bu cismin uzaklığını hesaplarken de birtakım sıkıntılar doğabilir. Mercek bozulmasını gidererek cismin merkezini olması gereken yere alabiliriz ve uzaklığını doğruya yakın ölçebiliriz. Anladığım kadarıyla 2 yöntem de cismin boyutlarının (genişlik,yükseklik gibi) daha doğru ölçülmesinde katkı sağlar.
