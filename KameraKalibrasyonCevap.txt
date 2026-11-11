@@ -1,0 +1,7 @@
+1. Görüntüyü yalnızca döndürmek mercek bozulmasını neden düzeltmez? Fotoğraftan bir örnek verin.
+
+	Sadece döndürme yapıldığında bozulmuş veya kavislenmiş çizgiler düzelmez, yalnızca eğik olan pozisyonları açı değiştirir. Fotoğrafın üst kısmındaki şamandıra dizisi hafifçe kavislenme göstermektedir ve bunu döndürdüğümüz zaman bu etki gitmeyecektir.(KalibrasyonSoru1deneme1.jpg dosyasında yaptığım gibi.)
+
+2. Bounding box ile nesnenin gerçek genişlik ve yüksekliğinden konum tahmini yaptığımızı düşünün. Mercek bozulmasını gidermek ve
+rotasyonu düzeltmek bu tahmine nasıl katkı sağlar? İkisinin kutunun merkezi, genişliği ve yüksekliği üzerindeki etkisini ayrı ayrı
+açıklayın.
