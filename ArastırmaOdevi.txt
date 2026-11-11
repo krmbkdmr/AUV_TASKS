@@ -8,8 +8,60 @@ Aşağıdaki soruları kendi ifadelerinizle, soru başına birkaç cümle veya k
 beklenmemektedir; cevaplarınızın maksimum 8-9 cümle olması yeterlidir. AI'dan yardım alabilirsiniz, buradaki amaç takım hakkında daha
 detaylı bir bilgi edinmenizdir. Soruların altında yer alan kaynakları kullanmanız tavsiye edilir. Ekstra olarak yararlandığınız bir kaynak
 olduysa belirtebilirsiniz.
+
+Sorular
+Aşağıdaki soruları kendi ifadelerinizle, soru başına birkaç cümle veya kısa maddelerle yanıtlayınız. Uzun bir rapor hazırlamanız
+beklenmemektedir; cevaplarınızın maksimum 8-9 cümle olması yeterlidir. AI'dan yardım alabilirsiniz, buradaki amaç takım hakkında daha
+detaylı bir bilgi edinmenizdir. Soruların altında yer alan kaynakları kullanmanız tavsiye edilir. Ekstra olarak yararlandığınız bir kaynak
+olduysa belirtebilirsiniz.
 Kaynaklar
 Bu çalışmada kusursuz cevaplardan çok araştırma isteğinizi ve öğrendiklerinizi kendi ifadelerinizle aktarabilmenizi önemsiyoruz. Yapay
 zekâdan destek alabilirsiniz; önemli olan yazdıklarınızı anlamanız ve kaynaklardan doğrulamanızdır.
 Teslim: Cevap: ... yazan kısımları doldurduktan sonra dosyayı PDF'e çevirip geri gönderebilirsiniz.
 Takıldığınız noktalarda bize danışabilirsiniz.
+
+1. AUV nedir? ROV'dan farkı nedir ve hangi alanlarda kullanılır?
+Cevap: 
+
+	İnsan müdahalesi veya fiziksel bir kablo bağlantısı olmadan, üzerindeki sensörler ve yazılım mimarisi sayesinde kendi kararlarını alarak otonom hareket eden sualtı robotlarıdır.
+	ROV'dan (Remotely Operated Vehicle) Farkı: ROV'lar su yüzeyindeki bir operatör tarafından bir kablo üzerinden anlık olarak uzaktan kumanda edilir. AUV'ler ise tamamen kablosuzdur; algılama, rota planlama ve kontrol süreçlerini insan müdahalesi olmadan kendi bilgisayarlarında yürütür.
+	Kullanım Alanları: Kaynaklarınızda yer alan RoboSub yarışması kapsamında otonom sualtı arama-kurtarma ile altyapı denetimi ve tamir gibi felaket müdahalesi görevlerinde yer alır. Ayrıca deniz tabanı haritalama, boru hattı denetimi, savunma sanayii ve bilimsel araştırmalarda kullanılır.
+
+2. İTÜ AUV Takımı hangi yarışmalara katılmaktadır? Takımın araçlarını ve bu araçların öne çıkan özelliklerini kısaca tanıtınız.
+Cevap: 
+
+	Yarışmalar: İTÜ AUV Takımı, uluslararası otonom sualtı aracı yarışması olan RoboSub'a, Teknofest'e ve TAC(Norveçte düzenlenen uluslararası otonom su altı yarışması)a katılmaktadır.
+
+	Araçlar ve Özellikleri: Yazılım deposundaki kayıtlarda takımın Taluy / Taluy mini adlı araçları öne çıkmaktadır.
+	. Bu araçlar; kamera, akustik konumlandırma ve derinlik sensörleriyle donatılmış olup su altında otonom yön tayini yapma, engellerden kaçınma, torpido fırlatma ve nesne taşıma kabiliyetlerine sahiptir.
+
+3. Yazılım ekibi araç üzerinde hangi işleri yapıyor? Teknik rapordan yararlanarak iki örnek veriniz.
+Cevap:
+
+	Görüntü İşleme ve Nesne Algılama (auv_vision): Su altındaki başlangıç kapılarını, slalom engellerini veya torpido panolarını kameralar yardımıyla tespit edip aracın bu hedeflere göre konumlanmasını sağlarlar.
+
+	Seyir ve Hareket Kontrolü (auv_navigation & auv_control): Sensör verilerini işleyerek aracın istenen derinlik ve doğrultuda sabit kalmasını (station keep), engel kanallarında hassas manevralar yapmasını ve otonom rotasını korumasını sağlarlar.
+
+4. RoboSub görevlerinden hangisinde çalışmak isterdiniz? Görevin neden ilginizi çektiğini ve yazılım ekibinin bu görevde nelerden
+sorumlu olacağını düşündüğünüzü kısaca anlatınız. (Tüm görevleri ayrıntılı incelemenize gerek yok.)
+Cevap:
+
+	Tercih Edilen Görev: Task 4 - Deploy (Torpedoes / Torpido Fırlatma)
+	Neden İlgi Çekici?: Su altında hem görsel tanılama hem de hassas konumlandırmayla fiziksel bir nesne fırlatma mekanizmasını dinamik olarak çalıştırmayı gerektirdiği için teknik açıdan oldukça heyecan verici geldi.
+	Yazılım Ekibinin Sorumlulukları:
+	auv_vision modülüyle hedef panosundaki farklı boyutlardaki açıklıkları ve ikonları algılamak.
+	Aracın hedefe olan mesafesini hesaplayarak aracı fırlatma pozisyonuna hizalamak ve sabit tutmak.
+	Doğru zamanlamayla torpido fırlatıcı aktüatörleri tetikleyen yazılım komutlarını üretmek.
+
+5. Takımın yazılım deposuna göz atınız. Kullanılan programlama dillerinden veya araçlardan birini seçip projede ne işe yaradığını
+kısaca yazınız. Kodu ayrıntılı incelemeniz beklenmemektedir. (AI'dan yardım alabilirsiniz.)
+Cevap:
+
+	Projedeki İşlevi: Python; AUV'nin üst seviye karar verme mekanizmalarının yazılmasında, SMACH tabanlı görev akışlarının kurgulanmasında ve görüntü işleme algoritmalarının hızlı geliştirilmesinde kullanılmaktadır.
+
+6. ROS tabanlı robot yazılımlarında görev akışını durum makineleriyle (state machine) düzenlemek için kullanılan SMACH
+kütüphanesi nedir? Ne işe yaradığını ve bir AUV'nin görevlerini yönetirken neden kullanılabileceğini kısaca açıklayınız.
+Cevap: 
+
+	SMACH Nedir?: ROS (Robot Operating System) ekosisteminde karmaşık robot davranışlarını ve görev akışlarını durum makineleri mimarisiyle modüler olarak yapılandırmayı sağlayan Python kütüphanesidir.
+	Ne İşe Yarar ve Neden Kullanılır?:AUV'nin yarışma sırasındaki adım adım görev akışını (Dalış Yap → Kapıdan Geç → Slalom Engellerini Aş → Torpido Fırlat → Başlangıç Noktasına Dön) aşamalı durumlar ve geçişler şeklinde yönetmeyi sağlar.Bir görev sırasında hata oluştuğunda (örneğin görsel hedefin bulunamaması veya zaman aşımı) aracın bir sonraki güvenli duruma geçmesini veya görevi tekrar denemesini organize ederek yazılımın kararlı çalışmasını sağlar.
