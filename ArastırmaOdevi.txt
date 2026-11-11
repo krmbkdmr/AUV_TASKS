@@ -1,0 +1,15 @@
+İTÜ AUV Yazılım Ekibi
+Ad Soyad: Kerem Bekdemir
+Çalışmanın Amacı
+Bu çalışmada İTÜ AUV Takımı'nı, katıldığımız yarışmaları ve otonom sualtı araçlarında yazılımın rolünü araştırmanızı istiyoruz. Amacımız,
+takıma ve üzerinde çalışacağınız projeye dair genel bir fikir edinmenizdir.
+Sorular
+Aşağıdaki soruları kendi ifadelerinizle, soru başına birkaç cümle veya kısa maddelerle yanıtlayınız. Uzun bir rapor hazırlamanız
+beklenmemektedir; cevaplarınızın maksimum 8-9 cümle olması yeterlidir. AI'dan yardım alabilirsiniz, buradaki amaç takım hakkında daha
+detaylı bir bilgi edinmenizdir. Soruların altında yer alan kaynakları kullanmanız tavsiye edilir. Ekstra olarak yararlandığınız bir kaynak
+olduysa belirtebilirsiniz.
+Kaynaklar
+Bu çalışmada kusursuz cevaplardan çok araştırma isteğinizi ve öğrendiklerinizi kendi ifadelerinizle aktarabilmenizi önemsiyoruz. Yapay
+zekâdan destek alabilirsiniz; önemli olan yazdıklarınızı anlamanız ve kaynaklardan doğrulamanızdır.
+Teslim: Cevap: ... yazan kısımları doldurduktan sonra dosyayı PDF'e çevirip geri gönderebilirsiniz.
+Takıldığınız noktalarda bize danışabilirsiniz.
