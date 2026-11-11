@@ -32,7 +32,7 @@ if __name__ == "__main__":
         
     undistorted = undistort_image(image, camera_matrix, dist_coeffs)
     
-    # Açıyı negatif bir değerle değiştiriyorum.
+    # Açıyı negatif bir değerle döndürüyorum.
     corrected = rotate_image(undistorted, -15.0)
     
     output_path = image_path.with_name("havuz_26_haziran_duzeltilmisfinal.jpg")
