@@ -6,19 +6,17 @@ calibration_data = [
 [0.018, -0.012, 0.032],
 [0.022, -0.008, 0.028],
 ]
-test_data = [
-[0.120, -0.010, 0.030],
-[0.020, 0.090, 0.030],
-[0.020, -0.010, 0.030],
 
+test_data = [
 
 # hareketsiz sensör
-[,,],
+[0.020, -0.010, 0.030],
 
 # z ekseni etrafında dönen sensör
-[,,],
+[0.020, -0.010, 0.530],
 
 ]
+
 def calculate_bias(samples):
 
 	if len(samples) == 0:
