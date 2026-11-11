@@ -11,3 +11,9 @@ SORULAR
 etrafında sizin seçeceğiniz bir açısal hızla dönerken okunacak değerleri temsil etsin. Her ölçümde, gerçek açısal hıza hesapladığınız
 bias değerlerini ekleyiniz; rastgele gürültü olmadığını varsayınız. Önce bu iki ölçümün düzeltildikten sonra ne olmasını beklediğinizi
 yazınız. Ardından kodu çalıştırıp sonuçları tahmininizle karşılaştırınız.
+
+	Sensör hareketsizken gerçek açısal hız [0, 0, 0] olduğundan, bias eklenmiş ham ölçümün [0.020, -0.010, 0.030] olmasını bekliyorum. Bias çıkarıldığında sonucun [0, 0, 0] olmasını bekliyorum.
+
+	Z eksenindeki açısal hızı 0.5 rad/s olarak seçtim. Sensör Z ekseni etrafında 0.5 rad/s hızla dönerken gerçek açısal hız [0, 0, 0.5] olur. Bias eklendiğinde ham ölçüm [0.020, -0.010, 0.530] olur. Bias çıkarıldığında [0, 0, 0.5] sonucunu vermesini bekliyorum.
+
+	Kodu çalıştırdığımda elde ettiğim sonuçlar tahminlerimle aynı oldu.
